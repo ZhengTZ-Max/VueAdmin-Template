@@ -1,0 +1,180 @@
+:root {
+  --headerBg: #4079c9;
+  --primary: #4079c9;
+  --primary-hover: #ecf5ff;
+  --error: #f56c6c;
+  --error-hover: #f56c6cce;
+  --error-active: #fa5d5d;
+  --success: #67c23a;
+  --success-hover: #67c23cce;
+  --success-active: #58b92b;
+  --border-color: #e7e7e7;
+}
+
+* {
+  font-size: 14px;
+}
+
+.im-card {
+  border-radius: 6px;
+  background: #fff;
+  padding: 16px;
+}
+
+.el-tooltip__popper {
+  max-width: 95%;
+}
+
+//支持谷歌
+::-webkit-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+//支持IE
+::-ms-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+//支持火狐
+::-moz-scrollbar {
+  width: 6px;
+  height: 4px;
+}
+
+/* 滚动条的滑块 */
+::-webkit-scrollbar-thumb {
+  background-color: #adadadc7;
+  border-radius: 4px;
+}
+
+::-ms-scrollbar-thumb {
+  background-color: #adadadc7;
+  border-radius: 4px;
+}
+
+::-moz-scrollbar-thumb {
+  background-color: #adadadc7;
+  border-radius: 4px;
+}
+
+
+.text-success {
+  color: var(--success) !important;
+
+  &:hover {
+    color: var(--success-hover) !important;
+  }
+
+  &:active {
+    color: var(--success-active) !important;
+  }
+
+  // &:focus {
+  //   color: var(--success-active);
+  // }
+}
+
+.text-error {
+  color: var(--error) !important;
+
+  &:hover {
+    color: var(--error-hover) !important;
+  }
+
+  &:active {
+    color: var(--error-active) !important;
+  }
+
+  // &:focus {
+  //   color: var(--error-active);
+  // }
+}
+
+.text-tip {
+  color: #303133;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.label-text {
+  font-size: 14px;
+  margin-bottom: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-left: 12px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: var(--primary);
+    border-radius: 4px;
+  }
+}
+
+// .el-form {
+//   .el-form-item {
+//     margin-bottom: 16px;
+
+//     .el-form-item__label,
+//     .el-form-item__content {
+//       font-size: 14px;
+//     }
+//   }
+// }
+
+.el-divider--horizontal {
+  margin: 16px 0;
+}
+
+.el-table__body-wrapper {
+  &::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+  }
+
+  /* 滚动条的滑块 */
+  &::-webkit-scrollbar-thumb {
+    background-color: #adadadc7;
+    border-radius: 4px;
+  }
+
+  &::-ms-scrollbar {
+    width: 10px;
+    height: 7px;
+  }
+
+  &::-ms-scrollbar-thumb {
+    background-color: #adadadc7;
+    border-radius: 4px;
+  }
+
+  &::-moz-scrollbar {
+    width: 10px;
+    height: 7px;
+  }
+
+
+  &::-moz-scrollbar-thumb {
+    background-color: #adadadc7;
+    border-radius: 4px;
+  }
+
+  &::-moz-scrollbar {
+    width: 10px;
+    height: 7px;
+  }
+
+  &::-moz-scrollbar-thumb {
+    background-color: #adadadc7;
+    border-radius: 4px;
+  }
+}
+
+.el-radio__label {
+  font-size: 12px;
+}
